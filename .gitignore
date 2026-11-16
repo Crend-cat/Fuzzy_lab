@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+logs/*.sqlite3
+logs/*.sqlite3-wal
+logs/*.sqlite3-shm
+logs/*.jsonl
+logs/*.log
+# Локальная база и журналы приложения
+logs/*.sqlite3-*
+logs/*.db
+logs/*.db-*
+*.before_sqlite_logging.bak

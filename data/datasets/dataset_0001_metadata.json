@@ -1,0 +1,21 @@
+{
+  "count": 300,
+  "center_mean": 0.0,
+  "center_std": 1.0,
+  "n": 8,
+  "approximation": "formula_1",
+  "formula_1_sign": "minus",
+  "seed": 42,
+  "sigma_mode": "uniform",
+  "sigma_min": 0.15,
+  "sigma_max": 0.45,
+  "fixed_sigma": null,
+  "sigma_law": "Uniform(sigma_min, sigma_max)",
+  "sigma_law_is_project_assumption": true,
+  "formula": {
+    "omega_n": "sqrt(12/n) * (sum(U_k) - n/2), U_k ~ Uniform(0,1)",
+    "formula_1": "eta = omega_n - (omega_n^3 - 3*omega_n)/(20*n)",
+    "formula_2": "eta = omega_n - 41*(omega_n^5 - 10*omega_n^3 + 15*omega_n)/(13440*n^2)",
+    "center": "x0_i = center_mean + center_std * eta_i"
+  }
+}
